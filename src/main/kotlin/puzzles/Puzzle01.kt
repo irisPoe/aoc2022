@@ -39,7 +39,6 @@ class Puzzle01P2 : Puzzle() {
         caloriesPerElve.add(noOfCaloriesForCurrentElve)
 
         caloriesPerElve.sortDescending()
-        var firstThree = caloriesPerElve.take(3)
         var result = caloriesPerElve.take(3).reduce{ y, vars -> y + vars }
         return result.toString()
     }
