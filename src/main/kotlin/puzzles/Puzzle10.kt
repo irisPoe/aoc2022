@@ -65,7 +65,6 @@ class Puzzle10P2 : Puzzle() {
         var xValue = 1
         var currentCycle = 0
 
-        var index: Int = 0
         for (command in cpuCommands) {
             for (commandCycle in 0 until command.type.getCycleTime()) {
                 if (isInSpritePosition(currentCycle % 40, xValue))
@@ -81,7 +80,6 @@ class Puzzle10P2 : Puzzle() {
 
                 currentCycle++
             }
-            index++
         }
 
         println()
